@@ -13,14 +13,14 @@ public class archivoVacaciones {
         
         
         
-         FileOutputStream salida = new FileOutputStream("F:/vacaciones.txt");
+         FileOutputStream salida = new FileOutputStream("vacaciones.txt");
          ObjectOutputStream guardarEmpleado = new ObjectOutputStream(salida);
          guardarEmpleado.writeObject(ingresarVacaciones.ia);
          salida.close();
     }
     
     public  void recuperar() throws FileNotFoundException, IOException, ClassNotFoundException{
-        FileInputStream   entrada = new FileInputStream("F:/vacaciones.txt");
+        FileInputStream   entrada = new FileInputStream("vacaciones.txt");
         ObjectInputStream  entrarEmpleado = new ObjectInputStream(entrada);
         ingresarVacaciones.ia = (ArrayList) entrarEmpleado.readObject();
         entrada.close();

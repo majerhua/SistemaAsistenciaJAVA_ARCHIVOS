@@ -75,6 +75,11 @@ public class ingresarUsuario extends javax.swing.JFrame {
         btnSalir.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Cambria Math", 3, 24)); // NOI18N
         jLabel3.setText("Usuario");
@@ -185,6 +190,11 @@ public class ingresarUsuario extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     
     public static void main(String args[]) {

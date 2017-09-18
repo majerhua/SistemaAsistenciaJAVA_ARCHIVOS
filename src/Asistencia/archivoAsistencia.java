@@ -20,7 +20,7 @@ public class archivoAsistencia {
         
         
         
-        FileOutputStream entrada = new FileOutputStream("F:/asistencia.txt");
+        FileOutputStream entrada = new FileOutputStream("asistencia.txt");
         ObjectOutputStream guardarDepartamento = new ObjectOutputStream(entrada);
         guardarDepartamento.writeObject(ingresarAsistencia.as);
         entrada.close();
@@ -32,7 +32,7 @@ public class archivoAsistencia {
     public void recuperar() throws FileNotFoundException, IOException, ClassNotFoundException{
         
         
-        FileInputStream recuperar = new FileInputStream("F:/asistencia.txt");
+        FileInputStream recuperar = new FileInputStream("asistencia.txt");
         ObjectInputStream recuperarDepartamento = new ObjectInputStream(recuperar);
         ingresarAsistencia.as = (ArrayList) recuperarDepartamento.readObject();
         recuperar.close();

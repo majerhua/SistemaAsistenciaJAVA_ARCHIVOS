@@ -76,23 +76,21 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtcodEmple" min="-2" pref="179" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="fechInicio" alignment="0" pref="179" max="32767" attributes="0"/>
-                                  <Component id="fechFinal" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtAutoriza" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="btnMostrar" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="btnModificar" min="-2" pref="89" max="-2" attributes="0"/>
                           <EmptySpace pref="78" max="32767" attributes="0"/>
                           <Component id="btnSalir" min="-2" pref="81" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtcodEmple" min="-2" pref="179" max="-2" attributes="0"/>
+                              <Component id="txtAutoriza" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                              <Component id="btnMostrar" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                              <Component id="fi" min="-2" pref="179" max="-2" attributes="0"/>
+                              <Component id="ff" min="-2" pref="179" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -106,17 +104,17 @@
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtcodEmple" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fechInicio" min="-2" pref="29" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fi" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      <Component id="fechFinal" min="-2" pref="28" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ff" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtAutoriza" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
@@ -195,10 +193,6 @@
         <Component class="javax.swing.JTextField" name="txtcodEmple">
         </Component>
         <Component class="javax.swing.JTextField" name="txtAutoriza">
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="fechInicio">
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="fechFinal">
         </Component>
         <Component class="javax.swing.JButton" name="btnGuardar">
           <Properties>
@@ -309,6 +303,10 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="fi">
+        </Component>
+        <Component class="javax.swing.JTextField" name="ff">
         </Component>
       </SubComponents>
     </Container>
